@@ -1,0 +1,116 @@
+//variables
+
+@im: !important;
+@primary: #0097E2;
+@primary2: #34495e;
+@secondry: #45B7F0;
+@b: #000000;
+@w: #ffffff;
+@light-grey: #f3f3f3;
+
+/*===========================================================
+                    Site Wide Stuff
+===========================================================*/
+
+html,
+body {
+    background-color: @w;
+    font-family: 'Yrsa', serif;
+    height: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    /*padding-top: 64px;*/
+}
+
+.site-wrapper {
+    min-height: 100%;
+    height: auto;
+    padding: 0;
+}
+
+/*===========================================================
+                    Typography
+===========================================================*/
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Yrsa', serif;
+    letter-spacing: 1px;
+}
+
+h1.small-heading {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/*===========================================================
+                    navbar
+===========================================================*/
+
+
+
+/*===========================================================
+                    Index Page
+===========================================================*/
+
+#in-top {
+    background: url(../img/bg/keyboard.jpg) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: @w;
+    display: table;
+    height: 560px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+    width: 100%; 
+}
+
+.in-top-body {
+    display: table-cell;
+    verticle-align: middle;
+}
+
+.in-top-body img {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 5px solid @primary;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+.in-top-body h1,
+.in-top-body h3 {
+    margin: 5px auto;
+}
+
+.in-top-body h1 {
+    margin-bottom: 0;
+}
+
+.in-top-body h3 {
+    margin-top: 0;
+}
+
+/*===========================================================
+                    Footer Stuff
+===========================================================*/
+
+footer {
+    background-color: @primary2;
+    color: @w;
+    padding: 25px 0;
+}
+
+footer .copyright {
+    color: lighten(@primary2, 35%);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 5px auto;
+    text-align: center;
+}
