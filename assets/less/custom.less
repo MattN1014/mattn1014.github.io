@@ -59,7 +59,7 @@ h1.small-heading {
 
 
 /*===========================================================
-                    Index Page
+                    Top Section
 ===========================================================*/
 
 #in-top {
@@ -110,6 +110,27 @@ h1.small-heading {
     font-size: 18px;
 }
 
+/*===========================================================
+                    About Me Section
+===========================================================*/
+
+#ab-me {
+    background-color: @w;
+    padding: 50px 0;
+}
+
+#ab-me h2 {
+    border-bottom: 2px solid @primary;
+    color: lighten(@b, 30%);
+    display: inline-block;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+#ab-me p {
+    color: lighten(@b, 50%);
+    font-size: 18px;
+}
 
 /*===========================================================
                     Footer Stuff
@@ -121,13 +142,97 @@ footer {
     padding: 25px 0;
 }
 
+footer .social-links {
+    color: @w;
+    letter-spacing: 1px;
+    margin: 10px auto;
+}
+
+footer .social-links ul > li {
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 40px;
+    -moz-transition: -moz-transform ease 0.6s;
+    -webkit-transition: -o-transform ease 0.6s;
+    -ms-transition: -ms-transform ease 0.6s;
+    transition: transform ease 0.6s;
+}
+
+footer .social-links ul > li a {
+    color: @w;
+    font-size: 22px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+footer .social-links ul > li.git {
+    background-color: @b;
+}
+
+footer .social-links ul > li.git a {
+    left: 11px;
+    position: absolute;
+    right: 11px;
+    top: 7px;
+}
+
+footer .social-links ul > li.linkdin {
+    background-color: #0077b5;
+}
+
+footer .social-links ul > li.linkdin a {
+    left: 11px;
+    position: absolute;
+    right: 11px;
+    top: 7px;
+}
+
+footer .social-links ul > li.stackoverflow {
+    background-color: #f48024;
+}
+
+footer .social-links ul > li.stackoverflow a {
+    left: 11px;
+    position: absolute;
+    right: 11px;
+    top: 7px;
+}
+
+footer .social-links ul > li.twitter {
+    background-color: #5faade;
+}
+
+footer .social-links ul > li.twitter a {
+    left: 11px;
+    position: absolute;
+    right: 11px;
+    top: 7px;
+}
+
+footer .social-links ul > li.git:hover,
+footer .social-links ul > li.linkdin:hover,
+footer .social-links ul > li.stackoverflow:hover,
+footer .social-links ul > li.twitter:hover {
+    -moz-tranform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
 footer .copyright {
     color: lighten(@primary2, 35%);
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 1px;
     margin: 5px auto;
-    text-align: right;
+    text-align: center;
 }
 
 footer .copyright a {
@@ -135,7 +240,6 @@ footer .copyright a {
     text-decoration: none;
 }
 
-footer .copyright:hover,
 footer .copyright a:hover {
     color: lighten(@primary2, 45%);
     text-decoration: none;
