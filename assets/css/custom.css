@@ -137,6 +137,15 @@ footer .social-links ul > li a {
   vertical-align: middle;
   text-decoration: none;
 }
+footer .social-links ul > li.bitbucket {
+  background-color: #0747a6;
+}
+footer .social-links ul > li.bitbucket a {
+  left: 11px;
+  position: absolute;
+  right: 11px;
+  top: 7px;
+}
 footer .social-links ul > li.git {
   background-color: #000000;
 }
@@ -173,10 +182,21 @@ footer .social-links ul > li.twitter a {
   right: 11px;
   top: 7px;
 }
+footer .social-links ul > li.quora {
+  background-color: #b92b27;
+}
+footer .social-links ul > li.quora a {
+  left: 10px;
+  position: absolute;
+  right: 11px;
+  top: 8px;
+}
+footer .social-links ul > li.bitbucket:hover,
 footer .social-links ul > li.git:hover,
 footer .social-links ul > li.linkdin:hover,
 footer .social-links ul > li.stackoverflow:hover,
-footer .social-links ul > li.twitter:hover {
+footer .social-links ul > li.twitter:hover,
+footer .social-links ul > li.quora:hover {
   -moz-tranform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -o-transform: rotate(360deg);
