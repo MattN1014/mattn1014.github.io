@@ -20,6 +20,8 @@
         <!-- link google font -->
         <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
 
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+
         <!-- Link the Favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
@@ -59,6 +61,8 @@
         <script>
             new WOW().init();
         </script>
+
+        <?php include_once'controllers/ParseContactForm.php'; ?>
     </head>
     <body>
         <!-- add in navbar when required -->
@@ -103,6 +107,71 @@
                                     I'm a freelance web developer based in Darlington North East England where I work from a small office.  I have over 8 years of experience in designing and coding website for a wide range of clients.  Creating everything from landing pages, blogs, eCommerce stores & multi-page websites.  Along with creating websites I also offer support, unlimited hosting, tech support and much more.
                                 </p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 text-center">
+                            <h3>Send me a message</h3>
+
+                            <form method="POST">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                                        <input class="form-control" type="text" value="" placeholder="Your Name" name="contact_name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                        <input class="form-control" type="email" value="" placeholder="Your Email Address" name="contact_email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-globe"></i>
+                                        </span>
+                                        <input class="form-control" type="text" value="" placeholder="Your Website" name="contact_website"> 
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-info"></i>
+                                        </span>
+                                        <textarea class="form-control" type="text" name="project_info" placeholder="Message or Project infromation"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="g-recaptcha" data-sitekey="6Lc5_RYUAAAAAAKnICmuTt5eJ9kkO25-nh38B5oB">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="from-group">
+                                    <button class="btn btn-primary btn-block" type="submit" name="sendMessageBtn">
+                                        Send Message
+                                        <span class="glypicon glypicon-send"></span>
+                                    </button>  
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="col-lg-4">
+
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <h3>On Twitter</h3>
+                            <a class="twitter-timeline" data-height="400" data-theme="light" href="https://twitter.com/matt_noye"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </div>
                 </div>
