@@ -101,7 +101,14 @@ h1.small-heading {
   color: #4d4d4d;
   display: inline-block;
   margin-bottom: 30px;
+  margin-top: 0;
   text-transform: uppercase;
+}
+#ab-me img {
+  display: block;
+  height: 250px;
+  margin: auto;
+  width: auto;
 }
 #ab-me p {
   color: #808080;
