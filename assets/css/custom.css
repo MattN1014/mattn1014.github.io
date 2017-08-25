@@ -52,9 +52,8 @@ h1.small-heading {
   background-size: cover;
   color: #ffffff;
   display: table;
-  height: 560px;
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding: 160px 0;
   text-align: center;
   width: 100%;
 }
@@ -62,12 +61,17 @@ h1.small-heading {
   display: table-cell;
   verticle-align: middle;
 }
-.in-top-body img {
+.in-top-body .img-outer {
   background-color: rgba(255, 255, 255, 0.5);
-  border: 5px solid #0097e2;
+  border: 5px solid #46627f;
   border-radius: 50%;
+  display: inline-block;
+  margin: auto;
+}
+.in-top-body img {
   display: block;
   margin: 10px auto;
+  padding: 20px;
 }
 .in-top-body h1,
 .in-top-body h3 {

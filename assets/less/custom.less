@@ -69,9 +69,8 @@ h1.small-heading {
     background-size: cover;
     color: @w;
     display: table;
-    height: 560px;
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding: 160px 0;
     text-align: center;
     width: 100%; 
 }
@@ -81,12 +80,18 @@ h1.small-heading {
     verticle-align: middle;
 }
 
-.in-top-body img {
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 5px solid @primary;
+.in-top-body .img-outer {
+    background-color: rgba(255,255,255,0.5);
+    border: 5px solid lighten(@primary2, 10%);
     border-radius: 50%;
+    display: inline-block;
+    margin: auto;
+}
+
+.in-top-body img {
     display: block;
     margin: 10px auto;
+    padding: 20px;
 }
 
 .in-top-body h1,
