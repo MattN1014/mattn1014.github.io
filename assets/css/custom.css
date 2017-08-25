@@ -97,11 +97,24 @@ h1.small-heading {
   color: #4d4d4d;
   display: inline-block;
   margin-bottom: 30px;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 #ab-me p {
   color: #808080;
   font-size: 18px;
+  text-align: left;
+}
+/*===========================================================
+                    page-break-1 Section
+===========================================================*/
+#page-break-1 {
+  background: url(../img/bg/desk-comp.jpg) no-repeat bottom fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 120px 0;
+  width: 100%;
 }
 /*===========================================================
                     Contact Section
