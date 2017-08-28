@@ -146,6 +146,72 @@ h1.small-heading {
     text-align: left;
 }
 
+#ab-me .show-more  {
+    margin-top: 15px;
+}
+
+#ab-me .show-more .btn {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+#ab-me .show-more .btn .fa {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#ab-me .show-more .btn:before {
+    content:'Show More +';
+}
+
+#ab-me .show-more .btn[aria-expanded="true"]:before {
+    content:'Show Less -';
+}
+
+#ab-me #ab-more h3 {
+    color: lighten(@b, 40%);
+    margin: 20px auto;
+}
+
+#ab-more #skills {
+    padding: 25px 0;
+}
+
+#skills .skills-inner {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+#skills .skills-inner .fa {
+    color: @primary;
+    font-size: 50px;
+    margin: 0 auto 10px auto; 
+}
+
+#skills .skills-inner h4 {
+    color: lighten(@b, 45%);
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+#skills .skills-inner p {
+    color: lighten(@b, 60%);
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#skills .skills-inner p a {
+    color: @primary;
+}
+
+#skills .skills-inner p a:hover {
+    color: @primary2;
+    text-decoration: none;
+}
+
 /*===========================================================
                     page-break-1 Section
 ===========================================================*/
