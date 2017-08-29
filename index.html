@@ -62,8 +62,45 @@
             new WOW().init();
         </script>
     </head>
-    <body>
-        <!-- add in navbar when required -->
+    <body data-spy="scroll">
+        <header>
+            <div class="container">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="logo pull-left">
+                        <a href="index.html">
+                            <img class="img-responsive" src="assets/img/logos/logo-new.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="actions pull-right">
+                        <ul class="list-inline">
+                            <li>
+                                <a class="btn btn-outline btn-primary" href="#contact">
+                                    Get in touch
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-primary menu-bar" data-toggle="collapse" href="#menu">
+                                    menu
+                                    <span class="fa fa-bars"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="collapse menu" id="menu">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="">
+                                Home
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <div class="clearfix"></div>
+        </header>
         <div class="site-wrapper">
             <div class="jumbotron" id="in-top">
                 <div class="in-top-body">
@@ -114,22 +151,30 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-lg-offset-5">
+                        <div class="col-lg-12">
                             <div class="wow fadeIn text-center" data-wow-duration="4s" data-wow-delay="0.5s">
                                 <div class="show-more">
-                                    <button class="btn btn-primary btn-block" role="button" data-toggle="collapse" data-target="#ab-more" aria-constrols="ab-more" id="ab-me-btn">
-                                       
-                                    </button>
+                                    <button class="btn btn-primary btn-lg" role="button" data-toggle="collapse" data-target="#ab-more" aria-constrols="ab-more" id="ab-me-btn"></button>
                                 </div>
                             </div>
                         </div>
                         <div class="collapse" id="ab-more">
-                            <div class="col-lg-5">
-
+                            <div class="col-lg-5" id="focus">
+                                <h3 class="text-center">
+                                    Focus
+                                </h3>
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Web Development</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemine="0" aria-valuemax="100">
+                                            <span class="popOver" data-toggle="tooltip" data-placement="top" title="100%"> </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-lg-7" id="skills">
                                 <h3 class="text-center">
-                                    My Skills
+                                    Skills
                                 </h3>
                                 <div class="row">
                                     <div class="col-lg-4 text-center skills-inner">
