@@ -9,14 +9,16 @@ $(function(){
 	});
 });
 
-//Set the .active class for menu
-$('.navbar li').click(function(e) {
-    $('.navbar li.active').removeClass('active');
-    var $this = $(this);
-    if (!$this.hasClass('active')) {
-        $this.addClass('active');
-    }
-    e.preventDefault();
+//Change header color on scroll 
+$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 100) {
+            $("header").addClass("scrolled");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $("header").removeClass("scrolled");
+        }
+    });
 });
 
 //Showcase Counter
