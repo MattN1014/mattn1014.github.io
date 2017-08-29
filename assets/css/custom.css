@@ -40,30 +40,40 @@ h1.small-heading {
                     Custom Btns
 ===========================================================*/
 /*===========================================================
-                    Header
+                    Header & Navbar
 ===========================================================*/
 header {
   background-color: transparent;
+}
+header .navbar-mwn {
+  background-color: transparent;
   padding: 10px 0;
-  position: fixed;
   width: 100%;
   z-index: 999;
 }
-header.scrolled {
-  background-color: rgba(255, 255, 255, 0.5);
+header .navbar-mwn.scrolled {
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
-header .logo {
-  padding: 3px 0;
+header .navbar-mwn .navbar-brand {
+  padding: 10px 0;
 }
-header .logo img {
+header .navbar-mwn .navbar-brand img {
   height: 35px;
   width: auto;
 }
-header .actions ul {
-  margin-bottom: 0;
-  padding-bottom: 0;
+header .navbar-mwn .navbar-right {
+  padding: 5px 0;
+  text-align: center;
 }
-header .actions .btn-outline.btn-primary {
+header .navbar-mwn .navbar-right #in-touch {
+  margin: 0 15px 0 0;
+  padding: 7px;
+}
+header .navbar-mwn .navbar-right .btn-outline.btn-primary {
   background-color: transparent;
   border: 3px solid #34495e;
   color: #0097e2;
@@ -72,37 +82,63 @@ header .actions .btn-outline.btn-primary {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-header .actions .menu-bar {
+header .navbar-mwn .navbar-right .btn-outline.btn-primary:hover {
+  border: 3px solid #46627f;
+  color: #ffffff;
+}
+header .navbar-mwn .navbar-right .menu-bar {
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-header .actions .menu-bar .fa {
+header .navbar-mwn .navbar-right .menu-bar .fa {
   font-size: 14px;
   padding: 5px;
 }
-/*===========================================================
-                    Navigation
-===========================================================*/
-header .menu {
-  background-color: #ffffff;
-  display: none;
-  margin: 0 auto;
-  padding: 30px 10px 50px;
+header .navbar-mwn .mega-dropdown {
+  position: static !important;
   width: 100%;
 }
-header .menu ul {
-  margin-bottom: 0;
+header .navbar-mwn .mega-dropdown-menu {
+  background-color: #ffffff;
+  padding: 20px 0px;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
-header .menu a {
-  color: #333;
-  opacity: 0.8;
-  text-transform: uppercase;
+header .navbar-mwn .mega-dropdown-menu > li > ul {
+  padding: 0;
+  margin: 0;
 }
-header .menu a:hover {
-  opacity: 1;
+header .navbar-mwn .mega-dropdown-menu > li > ul > li {
+  list-style: none;
+}
+header .navbar-mwn .mega-dropdown-menu > li > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #999;
+  white-space: normal;
+}
+header .navbar-mwn .mega-dropdown-menu > li ul > li > a:hover,
+header .navbar-mwn .mega-dropdown-menu > li ul > li > a:focus {
   text-decoration: none;
+  color: #444;
+  background-color: #f5f5f5;
+}
+header .navbar-mwn .mega-dropdown-menu .dropdown-header {
+  color: #428bca;
+  font-size: 18px;
+  font-weight: bold;
+}
+header .navbar-mwn .mega-dropdown-menu form {
+  margin: 3px 20px;
+}
+header .navbar-mwn .mega-dropdown-menu .form-group {
+  margin-bottom: 3px;
 }
 /*===========================================================
                     Top Section
@@ -123,18 +159,6 @@ header .menu a:hover {
 .in-top-body {
   display: table-cell;
   verticle-align: middle;
-}
-.in-top-body .img-outer {
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 5px solid #46627f;
-  border-radius: 50%;
-  display: inline-block;
-  margin: auto;
-}
-.in-top-body img {
-  display: block;
-  margin: 10px auto;
-  padding: 20px;
 }
 .in-top-body h1,
 .in-top-body h3 {
