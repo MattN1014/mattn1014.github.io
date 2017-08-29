@@ -50,12 +50,85 @@ h1.small-heading {
                     Custom Btns
 ===========================================================*/
 
-
-
 /*===========================================================
-                    navbar
+                    Header
 ===========================================================*/
 
+header {
+    background-color: transparent;  
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header.scrolled {
+    background-color: rgba(255,255,255,0.5);
+}
+
+header .logo {
+    padding: 3px 0;
+}
+
+header .logo img {
+    height: 35px; 
+    width: auto;
+}
+
+header .actions {
+    
+}
+
+header .actions ul {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+header .actions .btn-outline.btn-primary {
+    background-color: transparent;
+    border: 3px solid @primary2;
+    color: @primary;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header .actions .menu-bar {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header .actions .menu-bar .fa {
+    font-size: 14px;
+    padding: 5px;
+}
+
+/*===========================================================
+                    Navigation
+===========================================================*/
+
+header .menu {
+    background-color: @w;
+    display: none; 
+    margin: 0 auto;
+    padding: 30px 10px 50px;
+    width: 100%;    
+}
+header .menu ul {
+    margin-bottom: 0;
+}
+header .menu a {
+    color: #333; 
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+header .menu a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
 
 
 /*===========================================================
@@ -73,6 +146,7 @@ h1.small-heading {
     padding: 160px 0;
     text-align: center;
     width: 100%; 
+    z-index: 2;
 }
 
 .in-top-body {
@@ -156,11 +230,6 @@ h1.small-heading {
     text-transform: capitalize;
 }
 
-#ab-me .show-more .btn .fa {
-    font-size: 13px;
-    font-weight: normal;
-}
-
 #ab-me .show-more .btn:before {
     content:'Show More +';
 }
@@ -172,6 +241,10 @@ h1.small-heading {
 #ab-me #ab-more h3 {
     color: lighten(@b, 40%);
     margin: 20px auto;
+}
+
+#ab-more #focus {
+    padding: 25px 0;
 }
 
 #ab-more #skills {
