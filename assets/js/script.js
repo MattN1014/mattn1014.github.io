@@ -13,13 +13,16 @@ $(function(){
 $(function() {
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 100) {
-            $("header").addClass("scrolled");
+            $(".navbar-mwn").addClass("scrolled");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
-           $("header").removeClass("scrolled");
+           $(".navbar-mwn").removeClass("scrolled");
         }
     });
 });
+
+//Change the menu button FA on click
+
 
 //Showcase Counter
 $('#showcase').ready(function(){
