@@ -54,45 +54,43 @@ h1.small-heading {
                     Header & Navbar
 ===========================================================*/
 
-header {
-    background-color: transparent;  
-}
-
-header .navbar-mwn {
+header  {
     background-color: transparent;
     padding: 10px 0;
+    position: fixed;
     width: 100%;
     z-index: 999;
 }
 
-header .navbar-mwn.scrolled {
+header.scrolled {
     background-color: rgba(255,255,255,0.8);
+    padding: 0;
     -webkit-transition:all 0.7s ease-in-out;
     -moz-transition:all 0.7s ease-in-out;
     -o-transition:all 0.7s ease-in-out;
     transition:all 0.7s ease-in-out;
 }
 
-header .navbar-mwn .navbar-brand {
-    padding: 10px 0;
+header .logo {
+    padding: 9px 0;
 }
 
-header .navbar-mwn .navbar-brand img {
+header .logo img {
     height: 35px; 
     width: auto;
 }
 
-header .navbar-mwn .navbar-right {
+header .options {
     padding: 5px 0;
-    text-align: center;
+    text-align: right;
 }
 
-header .navbar-mwn .navbar-right #in-touch {
+header .options #in-touch {
     margin: 0 15px 0 0;
     padding: 7px;
 }
 
-header .navbar-mwn .navbar-right .btn-outline.btn-primary {
+header .options .btn-outline.btn-primary {
     background-color: transparent;
     border: 3px solid @primary2;
     color: @primary;
@@ -102,33 +100,35 @@ header .navbar-mwn .navbar-right .btn-outline.btn-primary {
     text-transform: uppercase;
 }
 
-header .navbar-mwn .navbar-right .btn-outline.btn-primary:hover {
+header .options .btn-outline.btn-primary:hover {
     border: 3px solid lighten(@primary2, 10%);
     color: @w;
 }
 
-header .navbar-mwn .navbar-right .menu-bar {
+header .options .menu-bar {
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-header .navbar-mwn .navbar-right .menu-bar .fa {
+header .options .menu-bar .fa {
     font-size: 14px;
     padding: 5px;
 }  
 
-header .navbar-mwn .mega-dropdown {
+header .mega-menu {
     position: static !important;
     width:100%;
 }
-header .navbar-mwn .mega-dropdown-menu {
+header .mega-menu {
     background-color: @w;
-    padding: 20px 0px;
-    width: 100%;
     box-shadow: none;
     -webkit-box-shadow: none;
+    display: none;
+    margin: 5px auto;
+    padding: 25px 10px;
+    width: 100%;
 }
 
 header .navbar-mwn .mega-dropdown-menu > li > ul {
