@@ -13,10 +13,10 @@ $(function(){
 $(function() {
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 100) {
-            $(".navbar-mwn").addClass("scrolled");
+            $("header").addClass("scrolled");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
-           $(".navbar-mwn").removeClass("scrolled");
+           $("header").removeClass("scrolled");
         }
     });
 });
