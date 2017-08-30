@@ -43,13 +43,15 @@ h1.small-heading {
                     Header & Navbar
 ===========================================================*/
 header {
-  background-color: transparent;
-  padding: 10px 0;
   position: fixed;
   width: 100%;
   z-index: 999;
 }
-header.scrolled {
+.header-inner {
+  background-color: transparent;
+  padding: 10px 0;
+}
+header .header-inner.scrolled {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 0;
   -webkit-transition: all 0.7s ease-in-out;
@@ -96,44 +98,36 @@ header .options .menu-bar .fa {
   padding: 5px;
 }
 header .mega-menu {
-  position: static !important;
-  width: 100%;
-}
-header .mega-menu {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: none;
   -webkit-box-shadow: none;
   display: none;
-  margin: 5px auto;
-  padding: 25px 10px;
+  margin: auto;
+  padding: 15px 10px;
+  position: static !important;
   width: 100%;
 }
-header .navbar-mwn .mega-dropdown-menu > li > ul {
-  padding: 0;
+header .mega-menu .dropdown-header {
+  color: #34495e;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .mega-menu ul {
+  border-right: 1px solid #cccccc;
+  list-style-type: none;
+}
+header .mega-menu > ul > li {
+  padding: 3px;
   margin: 0;
 }
-header .navbar-mwn .mega-dropdown-menu > li > ul > li {
-  list-style: none;
+header .mega-menu > ul > li > a {
+  color: #808080;
+  font-size: 16px;
 }
-header .navbar-mwn .mega-dropdown-menu > li > ul > li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.428571429;
-  color: #999;
-  white-space: normal;
-}
-header .navbar-mwn .mega-dropdown-menu > li ul > li > a:hover,
-header .navbar-mwn .mega-dropdown-menu > li ul > li > a:focus {
+header .mega-menu > ul > li > a:hover {
+  color: #0097e2;
   text-decoration: none;
-  color: #444;
-  background-color: #f5f5f5;
-}
-header .navbar-mwn .mega-dropdown-menu .dropdown-header {
-  color: #428bca;
-  font-size: 18px;
-  font-weight: bold;
 }
 header .navbar-mwn .mega-dropdown-menu form {
   margin: 3px 20px;
