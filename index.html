@@ -65,123 +65,83 @@
     </head>
     <body data-spy="scroll">
         <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="logo">
-                            <img class="img-responsive" src="assets/img/logos/logo-new.png">
+            <div class="header-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="logo">
+                                <img class="img-responsive" src="assets/img/logos/logo-new.png">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="options">
-                            <a class="btn btn-outline btn-primary" id="in-touch" href="#contact">
-                                Get in touch
-                            </a>
-                            <button class="btn btn-primary menu-bar" data-toggle="collapse" href="#mega-menu">
-                                menu
-                                <span class="fa fa-bars" id="menu-toggle"></span>
-                            </button>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="options">
+                                <a class="btn btn-outline btn-primary" id="in-touch" href="#contact">
+                                    Get in touch
+                                </a>
+                                <button class="btn btn-primary menu-bar" type="button" data-toggle="collapse" data-target="#mega-menu" aria-expanded="false" aria-controls="mega-menu">
+                                    menu
+                                    <span class="fa fa-bars" id="menu-toggle"></span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="mega-menu row collapse" id="mega-menu">
-                            <ul class="col-lg-3">
-                                <li>
-                                    <a href="index.php">
-                                        Home
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#ab-me">
-                                        About
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="col-lg-3">
-                                <li class="dropdown-header">
-                                    Services
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Hosting
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Web design
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Web Development 
-                                    </a>
-                                </li>
-                                <li>    
-                                    <a href="">
-                                        WordPress
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="col-lg-3">
-                                <li class="dropdown-header">
-                                    Products
-                                </li>
-                            </ul>
-                            <ul>
-                                <li class="dropdown-header">
-                                    Social Media Links
-                                </li>
-                            </ul>
-                        </div>
-                        <ul class="mega-dropdown-menu collapse-menu row collapse"
-                        id="menu">
-                            <li class="col-sm-3">
-                                <ul>
-                                    <li class="dropdown-header">Dresses</li>
-                                    <li><a href="#">Unique Features</a></li>
-                                    <li><a href="#">Image Responsive</a></li>
-                                    <li><a href="#">Auto Carousel</a></li>
-                                    <li><a href="#">Newsletter Form</a></li>
-                                    <li><a href="#">Four columns</a></li>
-                                    <li class="divider"></li>
-                                    <li class="dropdown-header">Tops</li>
-                                    <li><a href="#">Good Typography</a></li>
-                                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mega-menu row collapse wow fadeInDown" id="mega-menu">
+                        <ul class="col-lg-3">
+                            <li class="dropdown-header">
+                                Me
                             </li>
-                            <li class="col-sm-3">
-                                <ul>
-                                    <li class="dropdown-header">Jackets</li>
-                                    <li><a href="#">Easy to customize</a></li>
-                                    <li><a href="#">Glyphicons</a></li>
-                                    <li><a href="#">Pull Right Elements</a></li>
-                                    <li class="divider"></li>
-                                    <li class="dropdown-header">Pants</li>
-                                    <li><a href="#">Coloured Headers</a></li>
-                                    <li><a href="#">Primary Buttons & Default</a></li>
-                                    <li><a href="#">Calls to action</a></li>
-                                </ul>
+                            <li>
+                                <a href="index.php">
+                                    Home
+                                </a>
                             </li>
-                            <li class="col-sm-3">
-                                <ul>
-                                    <li class="dropdown-header">Accessories</li>
-                                    <li><a href="#">Default Navbar</a></li>
-                                    <li><a href="#">Lovely Fonts</a></li>
-                                    <li><a href="#">Responsive Dropdown </a></li>                           
-                                    <li class="divider"></li>
-                                    <li class="dropdown-header">Newsletter</li>
-                                    <form class="form" role="form">
-                                      <div class="form-group">
-                                        <label class="sr-only" for="email">Email address</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email">  
-                                      </div>
-                                      <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                                    </form>                                                       
-                                </ul>
+                            <li>
+                                <a href="#ab-me">
+                                    About
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="col-lg-3">
+                            <li class="dropdown-header">
+                                Services
+                            </li>
+                            <li>
+                                <a href="">
+                                    Hosting
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Web design
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Web Development 
+                                </a>
+                            </li>
+                            <li>    
+                                <a href="">
+                                    WordPress
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="col-lg-3">
+                            <li class="dropdown-header">
+                                Products
+                            </li>
+                        </ul>
+                        <ul class="col-lg-3">
+                            <li class="dropdown-header">
+                                Social Media
                             </li>
                         </ul>
                     </div>
+                    
                 </div>
             </div>
         </header>
