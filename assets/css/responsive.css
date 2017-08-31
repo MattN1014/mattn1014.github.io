@@ -15,4 +15,9 @@
   header .menu {
     margin-top: 5px;
   }
+  header .mega-menu ul {
+    border-right: none;
+    list-style-type: none;
+    min-height: 100px;
+  }
 }
