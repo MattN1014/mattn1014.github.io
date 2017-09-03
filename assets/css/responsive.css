@@ -9,8 +9,15 @@
     display: block;
     margin: 0 auto 5px auto;
   }
+  header .header-inner.scrolled .logo {
+    padding: 3px 0;
+  }
   header .options {
     text-align: center;
+  }
+  header .header-inner.scrolled .options {
+    padding-bottom: 5px;
+    padding-top: 0;
   }
   header .menu {
     margin-top: 5px;
