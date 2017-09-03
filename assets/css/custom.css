@@ -72,7 +72,7 @@ header .options {
 }
 header .options #in-touch {
   margin: 0 15px 0 0;
-  padding: 7px;
+  padding: 5px;
 }
 header .options .btn-outline.btn-primary {
   background-color: transparent;
@@ -287,13 +287,52 @@ header .navbar-mwn .mega-dropdown-menu .form-group {
                     page-break-1 Section
 ===========================================================*/
 #page-break-1 {
-  background: url(../img/bg/desk-comp.jpg) no-repeat bottom fixed;
+  background: url(../img/bg/website-design-dark.png) no-repeat top fixed;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   margin: 0;
   padding: 120px 0;
   width: 100%;
+}
+/*===========================================================
+                    My Serv section 
+===========================================================*/
+#my-serv {
+  background-color: #ffffff;
+  color: #999999;
+  padding: 50px 0;
+}
+#my-serv h2 {
+  display: inline-block;
+  border-bottom: 2px solid #0097e2;
+  color: #34495e;
+  font-size: 40px;
+  margin-bottom: 10px;
+  width: auto;
+}
+#my-serv .serv-inner {
+  margin: 15px 5px;
+  min-height: 200px;
+  padding: 5px 0;
+}
+#my-serv .serv-inner .fa {
+  color: #0097e2;
+  display: block;
+  font-size: 55px;
+  margin: 3.5px auto;
+  text-align: center;
+}
+#my-serv .serv-inner h3 {
+  color: #34495e;
+  font-size: 24px;
+  margin-top: 15px;
+  text-align: center;
+}
+#my-serv .serv-inner p {
+  font-size: 14px;
+  margin: 10px 5px;
+  text-align: center;
 }
 /*===========================================================
                     Contact Section
