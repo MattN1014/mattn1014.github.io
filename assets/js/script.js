@@ -10,9 +10,6 @@ $(function() {
     });
 });
 
-//Change the menu button FA on click
-
-
 //Showcase Counter
 $('#showcase').ready(function(){
     $('.websites').animationCounter({
