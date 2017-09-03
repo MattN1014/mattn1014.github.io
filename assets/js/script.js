@@ -1,7 +1,7 @@
 //Change header color on scroll 
 $(function() {
     $(window).on("scroll", function() {
-        if($(window).scrollTop() >= 100) {
+        if($(window).scrollTop() >= 75) {
             $(".header-inner").addClass("scrolled");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
