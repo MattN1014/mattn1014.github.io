@@ -28,4 +28,14 @@
     list-style-type: none;
     min-height: 100px;
   }
+  #ab-me h2 {
+    margin-bottom: 20px;
+    margin-top: 7.5px;
+  }
+  #ab-me img {
+    margin-bottom: 7.5px;
+  }
+  #clients img {
+    margin: 30px auto;
+  }
 }
