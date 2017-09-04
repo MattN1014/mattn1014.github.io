@@ -38,4 +38,7 @@
   #clients img {
     margin: 30px auto;
   }
+  #showcase .counter-wrapper {
+    padding: 25px 0;
+  }
 }
