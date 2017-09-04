@@ -23,6 +23,7 @@
     margin-top: 5px;
   }
   header .mega-menu ul {
+    border-bottom: 1px solid #cccccc;
     border-right: none;
     list-style-type: none;
     min-height: 100px;
