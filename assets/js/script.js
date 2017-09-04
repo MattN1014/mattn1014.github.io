@@ -15,7 +15,7 @@ $('#showcase').ready(function(){
     $('.websites').animationCounter({
       start: 0,
       step: 1,
-      delay:400
+      delay: 600
     });
     $('.code').animationCounter({
       start: 0,
@@ -25,13 +25,14 @@ $('#showcase').ready(function(){
     $('.hosted').animationCounter({
       start: 0,
       step: 1,
-	  end: 500,
-      delay: 800
+	  end: 60,
+      delay: 1200
     });
     $('.clients').animationCounter({
       start: 0,
       step: 1,
-      delay: 1000
+      end: 30,
+      delay: 1500
     });
 });
 
