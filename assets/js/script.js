@@ -21,6 +21,7 @@ $('#showcase').ready(function(){
     $('.code').animationCounter({
       start: 0,
       step: 10,
+      end: 15000,
       delay: 400
     });
     $('.hosted').animationCounter({
