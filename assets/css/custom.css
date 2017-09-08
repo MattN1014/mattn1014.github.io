@@ -44,6 +44,7 @@ h1.small-heading {
 ===========================================================*/
 header {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 999;
 }
