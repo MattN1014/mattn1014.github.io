@@ -437,6 +437,20 @@ header .navbar-mwn .mega-dropdown-menu .form-group {
 #port .port-item-wrapper img {
   z-index: 1;
 }
+#port .show-more {
+  margin: 20px auto;
+}
+#port.show-more .btn {
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+#port .show-more .btn:before {
+  content: 'Show More +';
+}
+#port .show-more .btn[aria-expanded="true"]:before {
+  content: 'Show Less -';
+}
 /*===========================================================
                     Contact Section
 ===========================================================*/
