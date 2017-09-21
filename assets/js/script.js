@@ -2,10 +2,10 @@
 $(function() {
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 10) {
-            $(".header-inner").addClass("scrolled");
+            $(".header-inner .navbar-default").addClass("scrolled");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
-           $(".header-inner").removeClass("scrolled");
+           $(".header-inner .navbar-default").removeClass("scrolled");
         }
     });
 });
