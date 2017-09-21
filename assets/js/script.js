@@ -2,12 +2,28 @@
 $(function() {
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 10) {
-            $(".header-inner .navbar-default").addClass("scrolled");
+            $(".navbar-default").addClass("scrolled");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
-           $(".header-inner .navbar-default").removeClass("scrolled");
+           $(".navbar-default").removeClass("scrolled");
         }
     });
+});
+
+//Change header color on scroll 
+$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 10) {
+            $(".navbar-collapse").addClass("scrollBgRemove");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".navbar-collapse").removeClass("scrollBgRemove");
+        }
+    });
+});
+
+$(".navbar-toggle").on("click", function () {
+    $(this).toggleClass("active");
 });
 
 //Showcase Counter
