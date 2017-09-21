@@ -72,7 +72,7 @@ header .header-inner {
 }
 
 .header-inner .navbar-default.scrolled {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.8);
     padding: 0;
     -webkit-transition:all 0.7s ease-in-out;
     -moz-transition:all 0.7s ease-in-out;
@@ -108,29 +108,67 @@ header .header-inner {
     background-color: @w;
 }
 
+//This if to change the menu icons to cross when opened
+.header-inner .navbar-default .navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.header-inner .navbar-default .navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 6px;
+    transform: rotate(45deg);
+}
+
+.header-inner .navbar-default .navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent;
+}
+
+.header-inner .navbar-default .navbar-toggle.active .icon-bar:nth-of-type(3) {
+    top: -6px;
+    transform: rotate(-45deg);
+}
+
+.header-inner .navbar-default .navbar-collapse.scrollBgRemove {
+    background-color: transparent;
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    -o-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out;
+}
+
 .header-inner .navbar-default .navbar-collapse {
-    background-color: @w;
+    background-color: rgba(255,255,255,0.8);
     padding: 25px 0;
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    -o-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out;
 }
 
 .header-inner .navbar-default .nav {
-
+    border-right: 1px solid lighten(@b, 80%);
+    min-height: 180px;
 }
 
 .header-inner .navbar-default .nav .dropdown-header {
     color: @primary2;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: bold;
     letter-spacing: 1.5px;
     padding: 5px 10px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .header-inner .navbar-default .nav > li {
-
+    padding: 3px;
+    margin: 0;
 }
 
 .header-inner .navbar-default .nav > li > a {
-    color: lighten(@b, 60%);
+    color: lighten(@b, 50%);
+    font-size: 16px;
+    margin: 0;
+    padding: 3px 10px;
 }
 
 //Do not touch these 
