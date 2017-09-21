@@ -55,3 +55,10 @@ $('#showcase').ready(function(){
 });
 
 
+//Testimonails Carousel
+$(document).ready(function(){
+     $("#tm-carousel").carousel({
+         interval : 8000,
+         pause: false
+     });
+});
