@@ -602,17 +602,63 @@ header .header-inner {
 
 }
 
-#tm-carousel .carousel-indicators .active {
-    background-color: @primary2;
-}
-
-#testimonials .carousel-indicators {
+#tm-carousel .carousel-indicators {
     bottom: -50px;
     left: 0;
     margin-left: 0;
     text-align: center;
     width: 100%;
 }
+
+#tm-carousel .carousel-indicators li {
+    border: 1px solid @primary;
+    height: 15px;
+    width: 15px;
+}
+
+#tm-carousel .carousel-indicators .active {
+    background-color: @primary2;
+    border: 1px solid lighten(@primary2, 10%);
+    height: 16px;
+    width: 16px;
+}
+
+#tm-carousel .tm-wrapper {
+    min-height: 180px;
+}
+
+#tm-carousel .tm-wrapper .tm-img {
+    border-right: 3px solid darken(@light-grey, 10%);
+    padding: 10px 5px;
+}
+
+#tm-carousel .tm-wrapper .tm-img img {
+    display: block;
+    height: 80px;
+    margin: auto;
+    width: auto;
+}
+
+#tm-carousel .tm-wrapper .tm-body {
+
+}
+
+#tm-carousel .tm-wrapper .tm-body h3 {
+    color: @primary2;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: left;
+}
+
+#tm-carousel .tm-wrapper .tm-body h4 {
+    font-size: 16px;
+    padding: 5px;
+    letter-spacing: 1px;
+    margin: 0 auto 10px auto;
+}
+
+
 /*===========================================================
                     Contact Section
 ===========================================================*/

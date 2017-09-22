@@ -499,15 +499,49 @@ header .header-inner {
   margin-bottom: 30px;
   width: auto;
 }
-#tm-carousel .carousel-indicators .active {
-  background-color: #34495e;
-}
-#testimonials .carousel-indicators {
+#tm-carousel .carousel-indicators {
   bottom: -50px;
   left: 0;
   margin-left: 0;
   text-align: center;
   width: 100%;
+}
+#tm-carousel .carousel-indicators li {
+  border: 1px solid #0097e2;
+  height: 15px;
+  width: 15px;
+}
+#tm-carousel .carousel-indicators .active {
+  background-color: #34495e;
+  border: 1px solid #46627f;
+  height: 16px;
+  width: 16px;
+}
+#tm-carousel .tm-wrapper {
+  min-height: 180px;
+}
+#tm-carousel .tm-wrapper .tm-img {
+  border-right: 3px solid #dadada;
+  padding: 10px 5px;
+}
+#tm-carousel .tm-wrapper .tm-img img {
+  display: block;
+  height: 80px;
+  margin: auto;
+  width: auto;
+}
+#tm-carousel .tm-wrapper .tm-body h3 {
+  color: #34495e;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: left;
+}
+#tm-carousel .tm-wrapper .tm-body h4 {
+  font-size: 16px;
+  padding: 5px;
+  letter-spacing: 1px;
+  margin: 0 auto 10px auto;
 }
 /*===========================================================
                     Contact Section
