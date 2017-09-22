@@ -41,4 +41,12 @@
   #showcase .counter-wrapper {
     padding: 25px 0;
   }
+  #tm-carousel .tm-wrapper {
+    min-height: 415px;
+  }
+  #tm-carousel .tm-wrapper .tm-img {
+    border-right: 0;
+    border-bottom: 3px solid #dadada;
+    margin-bottom: 15px;
+  }
 }
