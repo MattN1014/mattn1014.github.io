@@ -771,18 +771,6 @@
                     <div class="row">
                         <div class="col-lg-4 text-center">
                             <h3>Send me a message</h3>
-
-                            <?php if(!empty($errMsg)): ?>
-                                <div class="alert alert-danger text-center" role="alert">
-                                    <?php echo $errMsg; ?>
-                                </div>
-                            <?php endif; ?>
-                            <?php if(!empty($succMsg)): ?>
-                                <div class="alert alert-success text-center" role="alert">
-                                    <?php echo $succMsg; ?>
-                                </div>
-                            <?php endif; ?>
-
                             <form method="POST" id="con-form">
                                 <div class="form-group">
                                     <div class="input-group">
@@ -815,9 +803,6 @@
                                         </span>
                                         <textarea class="form-control" type="text" name="contact_message" placeholder="Message or Project infromation"></textarea>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="g-recaptcha" data-sitekey="6LeytjIUAAAAAInu6d4CveWrzalAM6wzABzMnkBG"></div>
                                 </div>
                                 <div class="from-group">
                                     <button class="btn btn-primary btn-block" type="submit" name="sendMessageBtn">
