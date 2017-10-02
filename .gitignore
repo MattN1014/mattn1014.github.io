@@ -1,3 +1,8 @@
 controllers/ParseContactForm.php
 config/Send_Mail.php
 main-site-files/
+/nbproject/private/
+
+main/
+nbproject/project.xml
+nbproject/project.properties
