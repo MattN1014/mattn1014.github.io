@@ -21,6 +21,10 @@ body {
 .grecaptcha-badge {
   display: none;
 }
+.disabled-link {
+  color: #e6e6e6;
+  pointer-events: none;
+}
 /*===========================================================
                     Typography
 ===========================================================*/
@@ -60,7 +64,7 @@ header .header-inner {
   padding: 5px 0;
 }
 .header-inner .navbar-default.scrolled {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 0;
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
@@ -113,7 +117,7 @@ header .header-inner {
   transition: all 0.7s ease-in-out;
 }
 .header-inner .navbar-default .navbar-collapse {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 25px 0;
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
@@ -141,6 +145,20 @@ header .header-inner {
   font-size: 16px;
   margin: 0;
   padding: 3px 10px;
+  text-transform: capitalize;
+}
+.header-inner .navbar-default .nav > li > .navbar-btn > .btn {
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin: 0 10px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.header-inner .navbar-default .nav > li > .in-touch-email {
+  color: #4f6f8f;
+}
+.header-inner .navbar-default .nav > li > .in-touch-email:hover {
+  text-decoration: underline;
 }
 .navbar-header {
   float: none;
@@ -164,14 +182,14 @@ header .header-inner {
                     Top Section
 ===========================================================*/
 #in-top {
-  background: url(../img/bg/meeting.jpg) no-repeat bottom center scroll;
+  background: url(../img/bg/meeting.png) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: #ffffff;
   display: table;
   margin-bottom: 0;
-  padding: 250px 0;
+  padding: 300px 0;
   text-align: center;
   width: 100%;
   z-index: 2;
@@ -696,4 +714,39 @@ footer .copyright a {
 footer .copyright a:hover {
   color: #a8bccf;
   text-decoration: none;
+}
+/*===========================================================
+                    Responsive Stuff
+===========================================================*/
+@media only screen and (max-device-width: 736px) {
+  header {
+    text-align: center;
+  }
+  header .mega-menu ul {
+    border-bottom: 1px solid #cccccc;
+    border-right: none;
+    list-style-type: none;
+    min-height: 100px;
+  }
+  #ab-me h2 {
+    margin-bottom: 20px;
+    margin-top: 7.5px;
+  }
+  #ab-me img {
+    margin-bottom: 7.5px;
+  }
+  #clients img {
+    margin: 30px auto;
+  }
+  #showcase .counter-wrapper {
+    padding: 25px 0;
+  }
+  #tm-carousel .tm-wrapper {
+    min-height: 415px;
+  }
+  #tm-carousel .tm-wrapper .tm-img {
+    border-right: 0;
+    border-bottom: 3px solid #dadada;
+    margin-bottom: 15px;
+  }
 }
