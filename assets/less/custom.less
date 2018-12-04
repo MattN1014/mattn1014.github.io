@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Yrsa);
+
+//variables
+@primary: #0097E2;
+@secondry: #34495e;
+@b: #000000;
+@w: #ffffff;
+@light-grey: #f3f3f3;
+@green: #97C908;
+
+/*===========================================================
+                    Site Wide Styles
+===========================================================*/
+
+html,
+body {
+    background-color: @w;
+    font-family: 'Yrsa', serif;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+}
+
+.site-wrapper {
+    min-height: 100%;
+    height: auto;
+    margin-bottom: -1px;
+    padding: 0;
+}
+
+section {
+    padding: 40px 0;
+}
+
+/*===========================================================
+                    Header Styles
+===========================================================*/
+
+/*===========================================================
+                    Index Page Styles
+===========================================================*/
+
+//Top Section 
+#in-top {
+    background: url('../img/bg/117.jpg') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: @w;
+    margin: 0;
+    padding: 150px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#in-top img {
+    display: block;
+    height: 200px;
+    margin: 15px auto;
+    width: auto;
+}
+
+#in-top h1 {
+    font-size: 6.2rem;
+    margin: 10px auto 0 auto;
+}
+
+/*===========================================================
+                    Footer Styles
+===========================================================*/
+
+footer {
+    background-color: @secondry;
+}
+
+footer #footer-bottom {
+    color: lighten(@secondry, 30%);
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+footer #footer-bottom p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/*===========================================================
+                    Responsive Styles
+===========================================================*/
