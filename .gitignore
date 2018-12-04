@@ -6,3 +6,6 @@ main-site-files/
 main/
 nbproject/project.xml
 nbproject/project.properties
+
+
+/old_site/
