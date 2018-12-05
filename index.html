@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="all, follow">
+        <meta name="googlebot" content="index,follow,snippet,archive">
+
         <title>Matt's Portfolio</title>
 
         <!-- link stylesheets-->
@@ -35,26 +41,19 @@
         <meta name="msapplication-square310x310logo" content="assets/img/favicons/mstile-310x310.png" />
 
         <!-- Meta data / SEO  -->
+
+        <!-- Google Analytics code -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-93931788-3', 'auto');
+            ga('send', 'pageview');
+        </script>
     </head>
     <body>
-        <header class="fixed-top">
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <button type="button" data-toggle="collapse" data-target=".navbar-collapse" id="nav-btn" class="navbar-toggler">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div id="navigation" class="collapse navbar-collapse">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Home
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- ./navbar-collpase -->
-                </div><!-- ./container-fluid -->
-            </nav><!-- ./navbar -->
-        </header><!-- ./header -->
         <div class="site-wrapper">
             <section id="in-top">
                 <div class="container-fluid">
@@ -67,7 +66,55 @@
                     </div><!-- ./row -->
                 </div><!-- ./contaier -->
             </section><!-- ./top section -->
+            <nav class="navbar navbar-expand-xl">
+                <div class="container">
+                    <button type="button" data-toggle="collapse" data-target=".navbar-collapse" id="nav-btn" class="navbar-toggler ml-auto">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div id="navigation" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    Skills
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    Projects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    Testimonials
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    Resume
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- ./navigation -->
+                </div><!-- ./container -->
+            </nav><!-- ./nav -->
         </div><!-- ./site-wrapper -->
+        <section id="contact">
+            <div class="container-fluid">
+                <div class="row">
+                    
+                </div><!-- ./row -->
+            </div><!-- ./container -->
+        </section><!-- ./contact section-->
         <footer>
             <div id="footer-bottom">
                 <div class="container">
