@@ -34,6 +34,15 @@ section {
     padding: 40px 0;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+/*===========================================================
+                    Typograhpy Styles
+===========================================================*/
+
 /*===========================================================
                     Top Section Styles
 ===========================================================*/
@@ -67,6 +76,37 @@ section {
                     Navigation Styles
 ===========================================================*/
 
+.navbar {
+    background-color: @secondry;
+    border-bottom: 2px solid @primary;
+    padding: .3rem 1rem;
+}
+
+.navbar .navbar-toggler {}
+
+.navbar .navbar-toggler .fa-bars,
+.navbar .navbar-toggler .fa-times {}
+
+.navbar .navbar-nav {}
+
+.navbar .navbar-nav > .nav-item {}
+
+.navbar .navbar-nav > .nav-item > .nav-link {
+    color: @w;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    -webkit-transition: color 1.3s;
+    transition: color 1.3s;
+}
+
+.navbar .navbar-nav > .nav-item:hover > .nav-link,
+.navbar .navbar-nav > .nav-item:focus > .nav-link,
+.navbar .navbar-nav > .nav-item.active > .nav-link,
+.navbar .navbar-nav > .nav-item > .nav-link:hover,
+.navbar .navbar-nav > .nav-item > .nav-link:focus,
+.navbar .navbar-nav > .nav-item > .nav-link:active {
+    color: @primary;
+}
 
 /*===========================================================
                     Footer Styles

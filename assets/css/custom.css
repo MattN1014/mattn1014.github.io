@@ -21,6 +21,13 @@ body {
 section {
   padding: 40px 0;
 }
+.sticky {
+  position: sticky;
+  top: 0;
+}
+/*===========================================================
+                    Typograhpy Styles
+===========================================================*/
 /*===========================================================
                     Top Section Styles
 ===========================================================*/
@@ -48,6 +55,26 @@ section {
 /*===========================================================
                     Navigation Styles
 ===========================================================*/
+.navbar {
+  background-color: #34495e;
+  border-bottom: 2px solid #0097e2;
+  padding: .3rem 1rem;
+}
+.navbar .navbar-nav > .nav-item > .nav-link {
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  -webkit-transition: color 1.3s;
+  transition: color 1.3s;
+}
+.navbar .navbar-nav > .nav-item:hover > .nav-link,
+.navbar .navbar-nav > .nav-item:focus > .nav-link,
+.navbar .navbar-nav > .nav-item.active > .nav-link,
+.navbar .navbar-nav > .nav-item > .nav-link:hover,
+.navbar .navbar-nav > .nav-item > .nav-link:focus,
+.navbar .navbar-nav > .nav-item > .nav-link:active {
+  color: #0097e2;
+}
 /*===========================================================
                     Footer Styles
 ===========================================================*/
