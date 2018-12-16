@@ -1,43 +1,56 @@
 $(document).ready(function(){
-    //Fix the nav to the top of the page when the page is scrolled past current nav element
-    document.addEventListener('sticky-change', e =>{
-        const header = e.detail.target;
-        const sticking = e.detail.stuck;
+
+    //Sidebar functions
+    $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+    });
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $('#content').toggleClass('active');
     });
 
-    //Smooth page scrolling code
-    //Select links with hashes
-    $('a[href="#"]')
-    //Remove links that doin't link to anything
-    .not('href="#"]')
-    .not('[href="#0]')
-    .click(function(event){
-        //on page links
-        if(location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            //figure out element to scroll to
-            var target = $(this.has);
-            target = target.length ? target : $('[name=' + this.hash.slive(1) + ']');
-            //does the target exist
-            if(target.length){
-                //only prevent default if animation is going to happen
+    //Change button icon when clicked
+    $("#sidebarCollapse").click(function(){
+	    $(this).find("i").toggleClass("fa-bars fa-times");
+	});
+
+    //Smooth page scrolling
+    // Select all links with hashes
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+        // On-page links
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname){
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
-                $('html', 'body').animate({
+                $('html, body').animate({
                     scrollTop: target.offset().top
-                }, 1000, function(){
-                    //callback after animation
+                }, 1000, function() {
+                    // Callback after animation
+                    // Must change focus!
                     var $target = $(target);
                     $target.focus();
-                    if($target.is(":focus")) {
-                        //check if target was focused
-                        return false;
-                    }
+                    if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                    } 
                     else {
-                        $target.attr('tabindex', '-1'); //Used for elements not in focus
-                        $target.focus();//Set the focus again
+                        $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                        $target.focus(); // Set focus again
                     };
                 });
             }
         }
     });
-})
 
+    
+    
+})
