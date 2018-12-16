@@ -18,16 +18,88 @@ body {
   margin-bottom: -1px;
   padding: 0;
 }
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
 section {
   padding: 40px 0;
-}
-.sticky {
-  position: sticky;
-  top: 0;
 }
 /*===========================================================
                     Typograhpy Styles
 ===========================================================*/
+.light-text {
+  color: #8c8c8c;
+}
+/*===========================================================
+                    Header Styles (Will only display on mobile)
+===========================================================*/
+header.main-header {
+  display: none;
+}
+header.main-header #sidebarCollapse {
+  border: 2px solid rgba(52, 73, 94, 0.5);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  width: 3rem;
+}
+/*===========================================================
+                    Sidebar Navigation Styles
+===========================================================*/
+#sidebar {
+  background-color: #ffffff;
+  color: #34495e;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  transition: all 0.5s;
+  top: 0;
+  width: 20%;
+  z-index: 999;
+}
+#sidebar .sidebar-header {
+  background-color: #ffffff;
+  padding: 20px;
+}
+#sidebar .sidebar-header img {
+  display: block;
+  height: 75px;
+  margin: 5px auto;
+  width: auto;
+}
+#sidebar .sidebar-header h4 {
+  margin: 2.5px auto;
+  text-align: center;
+}
+#sidebar ul {
+  padding: 20px 0;
+}
+#sidebar ul > li > a {
+  color: #34495e;
+  display: block;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+#sidebar ul > li > a:hover {
+  color: #0097e2;
+}
+/*===========================================================
+                    Main area styles
+===========================================================*/
+#content {
+  min-height: 100vh;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.5s;
+  width: calc(80%);
+}
+#content.hidden {
+  width: 0%;
+}
 /*===========================================================
                     Top Section Styles
 ===========================================================*/
@@ -38,7 +110,7 @@ section {
   background-size: cover;
   color: #ffffff;
   margin: 0;
-  padding: 110px 0;
+  padding: 200px 0;
   text-align: center;
   width: 100%;
 }
@@ -53,33 +125,31 @@ section {
   margin: 10px auto 0 auto;
 }
 /*===========================================================
-                    Navigation Styles
+                    About Section Styles
 ===========================================================*/
-.navbar {
-  background-color: #34495e;
-  border-bottom: 2px solid #0097e2;
-  padding: .3rem 1rem;
+#about {
+  padding: 0;
 }
-.navbar .navbar-nav > .nav-item > .nav-link {
+#about .sec-title {
+  background-color: #0097e2;
+  padding: 30px 15px;
+}
+#about h2 {
   color: #ffffff;
-  font-size: 1.3rem;
-  text-transform: capitalize;
-  -webkit-transition: color 1.3s;
-  transition: color 1.3s;
+  font-size: 2.5rem;
+  line-height: 1.1rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
-.navbar .navbar-nav > .nav-item:hover > .nav-link,
-.navbar .navbar-nav > .nav-item:focus > .nav-link,
-.navbar .navbar-nav > .nav-item.active > .nav-link,
-.navbar .navbar-nav > .nav-item > .nav-link:hover,
-.navbar .navbar-nav > .nav-item > .nav-link:focus,
-.navbar .navbar-nav > .nav-item > .nav-link:active {
-  color: #0097e2;
+#about p {
+  color: #737373;
 }
 /*===========================================================
                     Footer Styles
 ===========================================================*/
 footer {
   background-color: #34495e;
+  margin-top: 25px;
 }
 footer #footer-bottom {
   color: #7795b4;
@@ -94,3 +164,21 @@ footer #footer-bottom p {
 /*===========================================================
                     Responsive Styles
 ===========================================================*/
+@media (max-width: 823px) {
+  header.main-header {
+    display: block;
+  }
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+    width: 60%;
+  }
+  #content {
+    width: 100%;
+  }
+  #contant.active {
+    width: calc(40%);
+  }
+}
