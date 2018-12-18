@@ -12,7 +12,13 @@ $(document).ready(function(){
     //Change button icon when clicked
     $("#sidebarCollapse").click(function(){
 	    $(this).find("i").toggleClass("fa-bars fa-times");
-	});
+    });
+    
+    //Ensure that the active class is being displayed on the menu
+    $(".side-nav .side-nav-item").on("click", function(){
+        $(".nav").find(".active").removeClass("active");
+        $(this).addClass("active");
+     });
 
     //Smooth page scrolling
     // Select all links with hashes
