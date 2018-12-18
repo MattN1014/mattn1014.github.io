@@ -152,7 +152,31 @@ header.main-header #sidebarCollapse {
 /*===========================================================
                     GitHub Section Styles
 ===========================================================*/
-/* Github section styles are being ran via the style.scss file in the root */
+#github {
+  padding: 20px 0;
+}
+#github .card {
+  margin: 10px 0;
+  min-height: 410px;
+}
+#github .card .card-header {
+  background-color: #ffffff;
+}
+#github .card .card-header h3 {
+  color: #34495e;
+  text-align: center;
+}
+#github .card .card-body {
+  font-size: 1.3rem;
+}
+#github .card .card-body ul > li > i {
+  color: #0097e2;
+  font-size: 1.2rem;
+}
+#github .card .card-footer {
+  background-color: #ffffff;
+  text-align: center;
+}
 /*===========================================================
                     Footer Styles
 ===========================================================*/
