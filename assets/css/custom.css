@@ -165,22 +165,17 @@ header.main-header #sidebarCollapse {
 }
 #github .card .card-header h3 {
   color: #34495e;
-  margin: 0;
-}
-#github .card .card-header h3:after {
-  background-color: #0097e2;
-  content: '';
-  display: block;
-  height: 1.5px;
   margin: 5px auto;
-  width: 100%;
+}
+#github .card .card-header ul {
+  margin: 5px auto;
+}
+#github .card .card-header ul > li > i {
+  color: #0097e2;
+  font-size: 1.2rem;
 }
 #github .card .card-body {
   font-size: 1.3rem;
-}
-#github .card .card-body ul > li > i {
-  color: #0097e2;
-  font-size: 1.2rem;
 }
 #github .card .card-footer {
   background-color: #ffffff;
