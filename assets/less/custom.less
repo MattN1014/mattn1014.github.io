@@ -23,13 +23,6 @@ body {
     padding: 0;
 }
 
-.site-wrapper {
-    min-height: 100%;
-    height: auto;
-    margin-bottom: -1px;
-    padding: 0;
-}
-
 .wrapper {
     display: flex;
     height: 100%;
@@ -39,6 +32,21 @@ body {
 section {
     padding: 40px 0;
 }
+
+.sec-title {
+    background-color: @primary;
+    padding: 30px 15px;
+}
+
+.sec-title h2.sec-title-con {
+    color: @w;
+    font-size: 2.5rem;
+    line-height: 1.1rem;
+    margin-bottom: 0;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
 /*===========================================================
                     Typograhpy Styles
 ===========================================================*/
@@ -81,7 +89,7 @@ header.main-header #sidebarCollapse {
 
 #sidebar .sidebar-header {
     background-color: @w;
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 #sidebar .sidebar-header img {
@@ -97,18 +105,29 @@ header.main-header #sidebarCollapse {
 }
 
 #sidebar ul {
-    padding: 20px 0;
+    list-style-type: none;
+    padding: 20px 10px;
 }
 
 #sidebar ul > li > a {
     color: @secondry;
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding: 10px;
+    -webkit-transition: color 1s, background-color 1s;
+    transition: color 1s, background-color 1s;
 }
 
 #sidebar ul > li > a:hover {
     color: @primary;
+    background-color: lighten(@b, 98.5%);
+    text-decoration: none;
+}
+
+#sidebar ul > li.active > a,
+#sidebar ul > li > a:focus,
+#sidebar ul > li > a:active {
+    font-weight: 600;
 }
 
 
@@ -167,19 +186,6 @@ header.main-header #sidebarCollapse {
     padding: 0;
 }
 
-#about .sec-title {
-    background-color: @primary;
-    padding: 30px 15px;
-}
-
-#about h2 {
-    color: @w;
-    font-size: 2.5rem;
-    line-height: 1.1rem;
-    margin-bottom: 0;
-    text-transform: uppercase;
-}
-
 #about img {}
 
 #about p {
@@ -215,6 +221,7 @@ footer #footer-bottom p {
 
     header.main-header {
         display: block;
+        padding: 10px 0;
     }
 
     #sidebar {
@@ -224,6 +231,10 @@ footer #footer-bottom p {
     #sidebar.active {
         margin-left: 0;
         width: 60%;
+    }
+
+    #sidebar .sidebar-header {
+        padding: 20px 5px;
     }
 
     #content {

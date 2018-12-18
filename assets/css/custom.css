@@ -12,12 +12,6 @@ body {
   max-width: 100%;
   padding: 0;
 }
-.site-wrapper {
-  min-height: 100%;
-  height: auto;
-  margin-bottom: -1px;
-  padding: 0;
-}
 .wrapper {
   display: flex;
   height: 100%;
@@ -25,6 +19,18 @@ body {
 }
 section {
   padding: 40px 0;
+}
+.sec-title {
+  background-color: #0097e2;
+  padding: 30px 15px;
+}
+.sec-title h2.sec-title-con {
+  color: #ffffff;
+  font-size: 2.5rem;
+  line-height: 1.1rem;
+  margin-bottom: 0;
+  padding-left: 15px;
+  text-transform: uppercase;
 }
 /*===========================================================
                     Typograhpy Styles
@@ -61,7 +67,7 @@ header.main-header #sidebarCollapse {
 }
 #sidebar .sidebar-header {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 20px 10px;
 }
 #sidebar .sidebar-header img {
   display: block;
@@ -74,16 +80,26 @@ header.main-header #sidebarCollapse {
   text-align: center;
 }
 #sidebar ul {
-  padding: 20px 0;
+  list-style-type: none;
+  padding: 20px 10px;
 }
 #sidebar ul > li > a {
   color: #34495e;
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   padding: 10px;
+  -webkit-transition: color 1s, background-color 1s;
+  transition: color 1s, background-color 1s;
 }
 #sidebar ul > li > a:hover {
   color: #0097e2;
+  background-color: #fbfbfb;
+  text-decoration: none;
+}
+#sidebar ul > li.active > a,
+#sidebar ul > li > a:focus,
+#sidebar ul > li > a:active {
+  font-weight: 600;
 }
 /*===========================================================
                     Main area styles
@@ -130,17 +146,6 @@ header.main-header #sidebarCollapse {
 #about {
   padding: 0;
 }
-#about .sec-title {
-  background-color: #0097e2;
-  padding: 30px 15px;
-}
-#about h2 {
-  color: #ffffff;
-  font-size: 2.5rem;
-  line-height: 1.1rem;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
 #about p {
   color: #737373;
 }
@@ -167,6 +172,7 @@ footer #footer-bottom p {
 @media (max-width: 823px) {
   header.main-header {
     display: block;
+    padding: 10px 0;
   }
   #sidebar {
     margin-left: -250px;
@@ -174,6 +180,9 @@ footer #footer-bottom p {
   #sidebar.active {
     margin-left: 0;
     width: 60%;
+  }
+  #sidebar .sidebar-header {
+    padding: 20px 5px;
   }
   #content {
     width: 100%;
