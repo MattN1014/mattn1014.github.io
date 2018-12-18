@@ -16,8 +16,8 @@ $(document).ready(function(){
     
     //Ensure that the active class is being displayed on the menu
     $(".side-nav .side-nav-item").on("click", function(){
-        $(".nav").find(".active").removeClass("active");
-        $(this).toggleClass("active");
+        $(".side-nav").find(".active").removeClass("active");
+        $(this).addClass("active");
      });
 
     //Smooth page scrolling
