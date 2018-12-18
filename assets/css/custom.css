@@ -39,7 +39,7 @@ section {
   color: #8c8c8c;
 }
 /*===========================================================
-                    Header Styles (Will only display on mobile)
+            Header Styles (Will only display on mobile)
 ===========================================================*/
 header.main-header {
   display: none;
@@ -148,6 +148,32 @@ header.main-header #sidebarCollapse {
 }
 #about p {
   color: #737373;
+}
+/*===========================================================
+                    GitHub Section Styles
+===========================================================*/
+#github {
+  padding: 20px 0;
+}
+#github .card {
+  margin: 10px 0;
+  min-height: 150px;
+}
+#github .card .card-header {
+  background-color: #ffffff;
+  color: #34495e;
+  font-size: 1.1rem;
+}
+#github .card .card-body {
+  font-size: 1.3rem;
+}
+#github .card .card-body ul > li > i {
+  color: #0097e2;
+  font-size: 1.4rem;
+}
+#github .card .card-footer {
+  background-color: #ffffff;
+  text-align: center;
 }
 /*===========================================================
                     Footer Styles
