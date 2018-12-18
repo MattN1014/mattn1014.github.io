@@ -85,6 +85,16 @@
                         <a href="#services">Services</a>
                     </li>
                     <li>
+                        <a href="#projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#github">
+                            GitHub Repos
+                        </a>
+                    </li>
+                    <li>
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -120,7 +130,7 @@
                         <div class="row">
                             {% for repo in site.github.public_repositories limit:15 %} <!-- look for repos and limit to max of 15 -->
                             {% if repo.fork != ture %} <!-- check to make sure repos aren't forked, they are then dont display -->
-                            <div class="col-lg-3">
+                            <div class="col-lg-4">
                                 <div class="card">
                                     <div class="card-header">
                                         <a href="{{repo.homepage}}">
@@ -131,22 +141,19 @@
                                         <p>
                                             {{repo.description}}
                                         </p>
-                                        <span>Stars {{ repo.stargazers_count }}</span>
-                                        <span>Forks {{ repo.forks_count }}</span>
+                                        <ul class="list-inline sticky-bottom">
+                                            <li class="list-inline-item">
+                                                <i class="fas fa-star"></i>'s {{repo.stargazers_count}}
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fas fa-code-branch"></i>'s {{repo.forks_count}}
+                                            </li>
+                                        </ul>
                                     </div><!-- ./card-body -->
                                     <div class="card-footer">
-                                        <div class="col-lg-6">
-                                            <div class="repo  repo--{{ repo.language | downcase }}">
-                                                <svg class="icon">
-                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#{{ repo.language | downcase }}"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 buttons">
-                                            <a href="{{repo.homepage}}" class="btn btn-primary">
-                                                View Repo
-                                            </a>
-                                        </div>
+                                        <a href="{{repo.homepage}}" class="btn btn-primary">
+                                            View Repo
+                                        </a>
                                     </div><!-- ./card-footer -->
                                 </div><!-- ./card -->
                             </div><!-- ./col -->
