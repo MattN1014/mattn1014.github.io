@@ -99,7 +99,10 @@ header.main-header #sidebarCollapse {
 #sidebar ul > li.active > a,
 #sidebar ul > li > a:focus,
 #sidebar ul > li > a:active {
+  background-color: #fbfbfb;
   font-weight: 600;
+  -webkit-transition: background-color 1s, font-weight 1s;
+  transition: background-color 1s, font-weight 1s;
 }
 /*===========================================================
                     Main area styles
