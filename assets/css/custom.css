@@ -163,9 +163,12 @@ header.main-header #sidebarCollapse {
   background-color: #ffffff;
   text-align: center;
 }
-#github .card .card-header h3 {
+#github .card .card-header a h3 {
   color: #34495e;
   margin: 5px auto;
+}
+#github .card .card-header a:hover h3 {
+  text-decoration: none;
 }
 #github .card .card-header ul {
   margin: 5px auto;
