@@ -133,8 +133,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            {% for repo in site.github.public_repositories limit:15 %} <!-- look for repos and limit to max of 15 -->
-                            {% if repo.fork != true %} <!-- check to make sure repos aren't forked, they are then dont display -->
+                            {% for repo in site.github.public_repositories limit:15 %}
+                            {% if repo.fork != true %}
                             <div class="col-lg-4">
                                 <div class="card">
                                     <div class="card-header">
@@ -159,8 +159,6 @@
                                         <a href="https://github.com/mattn1014/{{repo.name}}" target="_blank" class="btn btn-primary btn-lg">
                                             View Repo
                                         </a>
-                                        {{repository_url}}
-                                        {{language}}
                                     </div><!-- ./card-footer -->
                                 </div><!-- ./card -->
                             </div><!-- ./col -->
