@@ -134,15 +134,13 @@
                         </div>
                         <div class="row">
                             {% for repo in site.github.public_repositories limit:15 %} <!-- look for repos and limit to max of 15 -->
-                            {% if repo.fork != ture %} <!-- check to make sure repos aren't forked, they are then dont display -->
+                            {% if repo.fork != true %} <!-- check to make sure repos aren't forked, they are then dont display -->
                             <div class="col-lg-4">
                                 <div class="card">
                                     <div class="card-header">
-                                        <a href="{{repo.homepage}}">
-                                            <h4>
-                                                {{repo.name}}
-                                            </h4>
-                                        </a>
+                                        <h4>
+                                            {{repo.name}}
+                                        </h4>
                                         <ul class="list-inline sticky-bottom">
                                             <li class="list-inline-item">
                                                 <i class="fas fa-star"></i>'s {{repo.stargazers_count}}
@@ -158,7 +156,7 @@
                                         </p>
                                     </div><!-- ./card-body -->
                                     <div class="card-footer">
-                                        <a href="{{repo.homepage}}" class="btn btn-primary btn-lg">
+                                        <a href="{{ repository.html_url }}" class="btn btn-primary btn-lg">
                                             View Repo
                                         </a>
                                     </div><!-- ./card-footer -->
