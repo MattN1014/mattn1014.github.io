@@ -19,6 +19,17 @@ $(document).ready(function(){
         $(".side-nav").find(".active").removeClass("active");
         $(this).addClass("active");
      });
+     
+    //Add active class to menu item when scrolled to designated section
+    $(window).on('scroll', function() {
+        $('section').each(function() {
+            if($(window).scrollTop() >= $(this).position().top) {
+                var id = $(this).attr('id');
+                $('.side-nav li a').removeClass('active');
+                $('.side-nav li a[href="#'+ id +'"]').addClass('active');
+            }
+        });
+    });
 
     //Smooth page scrolling
     // Select all links with hashes
