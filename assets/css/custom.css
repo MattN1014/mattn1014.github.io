@@ -22,6 +22,7 @@ section {
 }
 .sec-title {
   background-color: #0097e2;
+  margin-bottom: 15px;
   padding: 30px 15px;
 }
 .sec-title h2.sec-title-con {
@@ -148,6 +149,9 @@ header.main-header #sidebarCollapse {
 ===========================================================*/
 #about {
   padding: 0;
+}
+#about .about-inner {
+  padding: 40px 0;
 }
 #about p {
   color: #737373;
