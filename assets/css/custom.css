@@ -92,17 +92,12 @@ header.main-header #sidebarCollapse {
   -webkit-transition: color 0.5s, background-color 0.5s;
   transition: color 0.5s, background-color 0.5s;
 }
-#sidebar ul > li > a:hover {
-  color: #0097e2;
-  background-color: #fbfbfb;
-  text-decoration: none;
-}
-#sidebar ul > li.active > a,
+#sidebar ul > li > a:hover,
 #sidebar ul > li > a:focus,
 #sidebar ul > li > a.active {
   background-color: #fbfbfb;
   color: #0097e2;
-  font-weight: 600;
+  text-decoration: none;
   -webkit-transition: background-color 0.5s, font-weight 0.5s;
   transition: background-color 0.5s, font-weight 0.5s;
 }
@@ -156,6 +151,18 @@ header.main-header #sidebarCollapse {
 }
 #about p {
   color: #737373;
+}
+/*===========================================================
+                    Projects Section Styles
+===========================================================*/
+#projects .col-lg-4 {
+  padding: 0;
+}
+#projects img {
+  display: block;
+  height: 210px;
+  margin: 0 auto;
+  width: 100%;
 }
 /*===========================================================
                     GitHub Section Styles

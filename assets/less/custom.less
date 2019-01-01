@@ -119,18 +119,12 @@ header.main-header #sidebarCollapse {
     transition: color .5s, background-color .5s;
 }
 
-#sidebar ul > li > a:hover {
-    color: @primary;
-    background-color: lighten(@b, 98.5%);
-    text-decoration: none;
-}
-
-#sidebar ul > li.active > a,
+#sidebar ul > li > a:hover,
 #sidebar ul > li > a:focus,
 #sidebar ul > li > a.active {
     background-color: lighten(@b, 98.5%);
     color: @primary;
-    font-weight: 600;
+    text-decoration: none;
     -webkit-transition: background-color .5s, font-weight .5s;
     transition: background-color .5s, font-weight .5s;
 }
@@ -200,6 +194,23 @@ header.main-header #sidebarCollapse {
 
 #about p {
     color: lighten(@b, 45%);
+}
+
+/*===========================================================
+                    Projects Section Styles
+===========================================================*/
+
+#projects {}
+
+#projects .col-lg-4 {
+    padding: 0;
+}
+
+#projects img {
+    display: block;
+    height: 210px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /*===========================================================
