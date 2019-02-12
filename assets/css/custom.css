@@ -216,7 +216,6 @@ header.main-header #sidebarCollapse {
   padding: 20px 0;
 }
 #github .card {
-  border: 0;
   border-radius: 5px;
   -webkit-box-shadow: 0px 5px 3px 0px rgba(0, 151, 226, 0.75);
   -moz-box-shadow: 0px 5px 3px 0px rgba(0, 151, 226, 0.75);
@@ -246,7 +245,6 @@ header.main-header #sidebarCollapse {
   font-size: 1.3rem;
 }
 #github .card .card-footer {
-  background-color: #ffffff;
   text-align: center;
 }
 #github .va-btn {
