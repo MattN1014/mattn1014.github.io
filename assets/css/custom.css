@@ -159,9 +159,6 @@ header.main-header #sidebarCollapse {
 /*===========================================================
                     Projects Section Styles
 ===========================================================*/
-#projects .sec-title {
-  margin-bottom: 0;
-}
 #projects .card {
   border: 0;
   border-radius: 5px;
