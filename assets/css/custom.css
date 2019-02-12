@@ -159,14 +159,55 @@ header.main-header #sidebarCollapse {
 /*===========================================================
                     Projects Section Styles
 ===========================================================*/
-#projects .col-lg-4 {
+#projects .sec-title {
+  margin-bottom: 0;
+}
+#projects .card {
+  border: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 3px 0px rgba(0, 151, 226, 0.75);
+  -moz-box-shadow: 0px 5px 3px 0px rgba(0, 151, 226, 0.75);
+  box-shadow: 0px 5px 3px 0px rgba(0, 151, 226, 0.75);
+  margin-bottom: 20px;
+  min-height: 400px;
+}
+#projects .card .card-header {
+  border: 0;
   padding: 0;
 }
-#projects img {
+#projects .card .card-header img {
   display: block;
-  height: 210px;
+  height: 190px;
   margin: 0 auto;
   width: 100%;
+}
+#projects .card .card-body {
+  border: 0;
+  min-height: 140px;
+  padding: 0 15px;
+}
+#projects .card .card-body h2 {
+  color: #0097e2;
+  font-size: 1.8rem;
+  margin: 5px auto;
+  text-align: center;
+}
+#projects .card .card-body p {
+  color: #808080;
+  margin: 10px auto;
+}
+#projects .card .card-footer {
+  border-top: 0;
+  padding: 1rem;
+  text-align: center;
+}
+#projects .card .card-footer .btn-group .btn {
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 15px;
+}
+#projects .card .card-footer .btn-group .btn i {
+  font-size: 1.4rem;
 }
 /*===========================================================
                     GitHub Section Styles
