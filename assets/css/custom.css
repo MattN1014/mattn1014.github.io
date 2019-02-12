@@ -53,6 +53,11 @@ header.main-header #sidebarCollapse {
   height: 2.5rem;
   width: 3rem;
 }
+header.main-header #sidebarCollapse:focus,
+header.main-header #sidebarCollapse:active {
+  outline: none !important;
+  box-shadow: none;
+}
 /*===========================================================
                     Sidebar Navigation Styles
 ===========================================================*/
