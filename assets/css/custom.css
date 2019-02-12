@@ -251,6 +251,31 @@ header.main-header #sidebarCollapse {
   margin: 10px auto;
 }
 /*===========================================================
+                    Contact Section Styles
+===========================================================*/
+#contact .con-meth {
+  text-align: center;
+}
+#contact .con-meth ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+#contact .con-meth ul > li > a > i {
+  background-color: #0097e2;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+#contact .con-meth ul > li > a:hover > i {
+  background-color: #34495e;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: background-color 0.7s;
+  transition: background-color 0.7s;
+}
+/*===========================================================
                     Footer Styles
 ===========================================================*/
 footer {
