@@ -68,6 +68,9 @@ $(document).ready(function(){
         }
     });
 
-    
+    //enable Tooltips for site
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
     
 })
