@@ -86,6 +86,9 @@ header.main-header #sidebarCollapse:active {
 
 #sidebar {
     background-color: @w;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.5);
     color: @secondry;
     height: 100vh;
     left: 0;
@@ -318,6 +321,46 @@ header.main-header #sidebarCollapse:active {
 
 #github .va-btn {
     margin: 10px auto;
+}
+
+/*===========================================================
+                    Testimonials Section Styles
+===========================================================*/
+
+
+#testimonials .testimonial-slider .owl-item {
+    padding: 0 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#testimonials .testimonial-slider .item {
+    padding: 25px;
+    width: 100%;
+}
+
+#testimonials .testimonial-slider .item .quote {
+    min-height: 130px;
+    padding: 5px 0;
+}
+
+#testimonials .testimonial-slider .item .quote p {
+    color: lighten(@b, 60%);
+    font-size: 1.5rem;
+}
+
+#testimonials .testimonial-slider .item .author {}
+
+#testimonials .testimonial-slider .item .author h3.auth-name {
+    color: @primary;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+#testimonials .testimonial-slider .item .author h4.auth-comp {
+    color: @secondry;
+    font-size: 1.2rem;
+    margin-top: 0;
 }
 
 /*===========================================================
