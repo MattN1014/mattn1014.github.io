@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    //enable Tooltips for site
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
 
     //Sidebar functions
     $("#sidebar").mCustomScrollbar({
@@ -68,9 +72,28 @@ $(document).ready(function(){
         }
     });
 
-    //enable Tooltips for site
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    });
+    //Testimonials slider code (owl-carousel)
+    $(".testimonial-slider").owlCarousel({
+		autoplay: true,
+		autoplayHoverPause: false,
+		loop: true,
+		navigation: false,
+		pagination: false,
+		paginationSpeed: 1200,
+		singleItem: false,
+		slideSpeed: 1200,
+		items: 1,
+		responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:1
+	        },
+	        1000:{
+	            items:1
+	        }
+	    },
+	});
     
 })
