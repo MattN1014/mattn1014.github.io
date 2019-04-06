@@ -10,6 +10,7 @@ body {
   height: 100%;
   margin: 0;
   max-width: 100%;
+  position: relative;
   padding: 0;
 }
 .wrapper {
@@ -18,7 +19,7 @@ body {
   width: 100%;
 }
 section {
-  padding: 40px 0;
+  margin: 20px 0;
 }
 .sec-title {
   background-color: #0097e2;
@@ -156,6 +157,7 @@ header.main-header #sidebarCollapse:active {
                     About Section Styles
 ===========================================================*/
 #about {
+  margin-top: 0;
   padding: 0;
 }
 #about .about-inner {
@@ -288,6 +290,9 @@ header.main-header #sidebarCollapse:active {
 /*===========================================================
                     Contact Section Styles
 ===========================================================*/
+#contact {
+  height: 100vh;
+}
 #contact .con-meth {
   text-align: center;
 }

@@ -22,9 +22,9 @@ $(document).ready(function(){
     $(".side-nav .side-nav-item").on("click", function(){
         $(".side-nav").find(".active").removeClass("active");
         $(this).addClass("active");
-     });
+    });    
      
-    //Add active class to menu item when scrolled to designated section
+    //Add active class to menu item when scrolled or clicked to designated section
     $(window).on('scroll', function() {
         $('section').each(function() {
             if($(window).scrollTop() >= $(this).position().top) {
